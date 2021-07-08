@@ -9,7 +9,7 @@ export default function Header() {
                     <Grid item xs={12} sm={6}>
                         <Typography variant="h3" className={styles.header_title}>Conversor de Temperatura</Typography>
                         <Typography>
-                            Com essa aplicação, você poderá converter uma temperatura de Grau Celsius(°C) para Fahrenheit(°F) ou para Kelvin(K)
+                            Com essa aplicação, você poderá converter uma temperatura de Grau Celsius(°C) para Fahrenheit(°F) ou para Kelvin(K).
                         </Typography>
                     </Grid>
 

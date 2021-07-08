@@ -27,14 +27,24 @@ export default function CalculationK() {
                     </Grid>
 
                     <Grid item>
-                        <Button
+                    {!valor ? (
+                            <Button
                             variant="contained"
                             color="primary"
                             fullWidth
-                            onClick={() => ResultK()}
                         >
                             Calcular
                         </Button>
+                        ) : (
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                fullWidth
+                                onClick={() => ResultK()}
+                            >
+                                Calcular
+                            </Button>
+                        )}
                     </Grid>
 
                     <div className={styles.result}>

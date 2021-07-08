@@ -27,14 +27,24 @@ export default function CalculationF() {
                     </Grid>
 
                     <Grid item>
-                        <Button
+                        {!valor ? (
+                            <Button
                             variant="contained"
                             color="primary"
                             fullWidth
-                            onClick={() => ResultF()}
                         >
                             Calcular
                         </Button>
+                        ) : (
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                fullWidth
+                                onClick={() => ResultF()}
+                            >
+                                Calcular
+                            </Button>
+                        )}
                     </Grid>
 
                     <div className={styles.result}>
